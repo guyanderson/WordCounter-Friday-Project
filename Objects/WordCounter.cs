@@ -16,7 +16,12 @@ namespace WordCounter.Project
     }
     public bool WordMatch()
     {
-      return false;
+      bool output = false;
+      if (_word == _sentence)
+      {
+        output = true;
+      }
+      return output;
     }
   }
 }
