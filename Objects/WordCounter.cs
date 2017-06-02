@@ -32,7 +32,7 @@ namespace WordCounter.Project
 
     public string[] SplitToWord()
     {
-      string[] wordSplit =  {"cat", "dog"};    //_sentence.Split(' ');
+      string[] wordSplit = _sentence.Split(' ');
       return wordSplit;
     }
   }
