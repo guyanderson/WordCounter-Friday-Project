@@ -1,11 +1,11 @@
-using System.Collections.Generic;
 using System.IO;
 using Microsoft.AspNet.Builder;
-using Nancy;
 using Nancy.Owin;
+using Nancy;
 using Nancy.ViewEngines.Razor;
+using System.Collections.Generic;
 
-namespace Contacts
+namespace Project
 {
   public class Startup
   {
@@ -27,15 +27,13 @@ namespace Contacts
     {
       return null;
     }
-
     public IEnumerable<string> GetDefaultNamespaces()
     {
       return null;
     }
-
     public bool AutoIncludeModelNamespace
     {
-      get { return false; }
+      get {return false;}
     }
   }
 }

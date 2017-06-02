@@ -14,5 +14,9 @@ namespace WordCounter.Project
       _word = word;
       _sentence = sentence;
     }
+    public bool WordMatch()
+    {
+      return false;
+    }
   }
 }

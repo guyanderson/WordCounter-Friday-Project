@@ -1,8 +1,8 @@
 using Nancy;
 using System.Collections.Generic;
-using ContactList.Objects;
 
-namespace ContactList.Modules
+
+namespace WordCounter.Project
 {
   public class HomeModule : NancyModule
   {
