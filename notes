@@ -1,0 +1,17 @@
+Page one form for user input
+-Take 2 user inputs
+  one comparison word
+  sentence to compare against
+Methods
+-Identify matching words
+-break sentence up by words
+  push words into array
+-loop through word array, compare against comparison word
+  for each matching comparison, add to count
+Page 2 results return
+-return to user their original inputs, and how many time it was found in their sentence
+
+1st - start with word comparison T/F. Easiest because it's only a string to string comparison.
+2nd - Break up sentence into words. Push into array. Will need to lookup method to do this.
+3rd - loop through array for T/F word matches, collect count. most complex due to requiring more logic than the rest.
+4th - nancy app. Not difficult, but backend logic is written first, then interface.
