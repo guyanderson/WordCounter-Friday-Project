@@ -16,5 +16,14 @@ namespace WordCounter.Project
       newWordCounter.WordMatch();
       Assert.Equal(true, newWordCounter.WordMatch());
     }
+    [Fact]
+    public void WordMatch_SameWord_False()
+    {
+      string word = "cat";
+      string sentence ="cat";
+      WordCounter newWordCounter = new WordCounter(word, sentence);
+      newWordCounter.WordMatch();
+      Assert.Equal(false, newWordCounter.WordMatch());
+    }
   }
 }
