@@ -1,9 +1,18 @@
+using Nancy;
 using System.Collections.Generic;
+using System.Diagnostics;
 
-namespace WordCounter.Objects
+namespace WordCounter.Project
 {
   public class WordCounter
   {
+    private string _word;
+    private string _sentence;
 
+    public WordCounter(string word, string sentence)
+    {
+      _word = word;
+      _sentence = sentence;
+    }
   }
-}est
+}
