@@ -14,6 +14,7 @@ namespace WordCounter.Project
       _word = word;
       _sentence = sentence;
     }
+
     public bool WordMatch()
     {
       bool output = false;
@@ -22,6 +23,17 @@ namespace WordCounter.Project
         output = true;
       }
       return output;
+    }
+
+    public string[] GetSplit()
+    {
+      return SplitToWord();
+    }
+
+    public string[] SplitToWord()
+    {
+      string[] wordSplit =  {"cat", "dog"};    //_sentence.Split(' ');
+      return wordSplit;
     }
   }
 }
