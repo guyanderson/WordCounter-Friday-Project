@@ -37,10 +37,10 @@ namespace WordCounter.Project
     [Fact]
     public void LoopCount_CountRepeats_StringA()
     {
-      string word = "cat";
+      string word = "food";
       string sentence = "The cat eats cat food";
       WordCounter newWordCounter = new WordCounter(word, sentence);
-      newWordCounter.SplitToWord();
+      newWordCounter.LoopCount();
       Assert.Equal(1, newWordCounter.LoopCount());
     }
   }
