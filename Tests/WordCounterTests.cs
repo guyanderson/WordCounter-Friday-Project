@@ -33,7 +33,12 @@ namespace WordCounter.Project
       WordCounter newWordCounter = new WordCounter(word, sentence);
       newWordCounter.SplitToWord();
       Assert.Equal("The", newWordCounter.SplitToWord()[0]);
+      Assert.Equal("cat", newWordCounter.SplitToWord()[1]);
+      Assert.Equal("eats", newWordCounter.SplitToWord()[2]);
+      Assert.Equal("cat", newWordCounter.SplitToWord()[5]);
+      Assert.Equal("food", newWordCounter.SplitToWord()[4]);
     }
+
     [Fact]
     public void LoopCount_CountRepeats_StringA()
     {

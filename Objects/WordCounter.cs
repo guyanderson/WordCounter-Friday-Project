@@ -17,7 +17,7 @@ namespace WordCounter.Project
 
     public int LoopCount()
     {
-      int result = 0;
+      int result = 1;
       return result;
     }
 
