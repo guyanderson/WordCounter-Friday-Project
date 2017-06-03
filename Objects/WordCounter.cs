@@ -19,9 +19,9 @@ namespace WordCounter.Project
     {
       string[] word = SplitToWord();
       int result = 0;
-      for(int i = 0; i < word.length; i++)
+      for(int i = 0; i < word.Length; i++)
       {
-        if(WordMatch() == true)
+        if(WordMatch(word[i]))
         {
           result += 1;
         }
@@ -29,15 +29,12 @@ namespace WordCounter.Project
       return result;
     }
 
-    public bool WordMatch()
+    public bool WordMatch(string input)
     {
       bool output = false;
-      foreach (string w in wordSplit)
+      if (input == _word)
       {
-        if (_word == _sentence)
-        {
-          output = true;
-        }
+        output = true;
       }
       return output;
     }
