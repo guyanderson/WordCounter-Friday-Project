@@ -13,8 +13,8 @@ namespace WordCounter.Project
       string word = "cat";
       string sentence ="cat";
       WordCounter newWordCounter = new WordCounter(word, sentence);
-      newWordCounter.WordMatch();
-      Assert.Equal(true, newWordCounter.WordMatch());
+      newWordCounter.WordMatch(sentence);
+      Assert.Equal(true, newWordCounter.WordMatch(sentence));
     }
     [Fact]
     public void WordMatch_SameWord_False()
@@ -22,8 +22,8 @@ namespace WordCounter.Project
       string word = "cat";
       string sentence ="dog";
       WordCounter newWordCounter = new WordCounter(word, sentence);
-      newWordCounter.WordMatch();
-      Assert.Equal(false, newWordCounter.WordMatch());
+      newWordCounter.WordMatch(sentence);
+      Assert.Equal(false, newWordCounter.WordMatch(sentence));
     }
     [Fact]
     public void SplitToWord_SplitBySpaces_StringA()

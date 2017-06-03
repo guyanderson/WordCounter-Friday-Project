@@ -14,7 +14,7 @@ namespace WordCounter.Project
       _word = word;
       _sentence = sentence;
     }
-
+//=========================================
     public int LoopCount()
     {
       string[] word = SplitToWord();
@@ -28,8 +28,8 @@ namespace WordCounter.Project
       }
       return result;
     }
-
-    public bool WordMatch(string input)
+//=========================================
+    public bool WordMatch( string input)
     {
       bool output = false;
       if (input == _word)
@@ -38,12 +38,7 @@ namespace WordCounter.Project
       }
       return output;
     }
-
-    // public string[] GetSplit()
-    // {
-    //   return SplitToWord();
-    // }
-
+//=========================================
     public string[] SplitToWord()
     {
       string[] wordSplit = _sentence.Split(' ');
