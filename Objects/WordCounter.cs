@@ -15,6 +15,12 @@ namespace WordCounter.Project
       _sentence = sentence;
     }
 
+    public int LoopCount()
+    {
+      int result = 0;
+      return result;
+    }
+
     public bool WordMatch()
     {
       bool output = false;
@@ -25,10 +31,10 @@ namespace WordCounter.Project
       return output;
     }
 
-    public string[] GetSplit()
-    {
-      return SplitToWord();
-    }
+    // public string[] GetSplit()
+    // {
+    //   return SplitToWord();
+    // }
 
     public string[] SplitToWord()
     {
