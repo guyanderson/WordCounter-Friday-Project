@@ -17,16 +17,27 @@ namespace WordCounter.Project
 
     public int LoopCount()
     {
-      int result = 1;
+      string[] word = SplitToWord();
+      int result = 0;
+      for(int i = 0; i < word.length; i++)
+      {
+        if(WordMatch() == true)
+        {
+          result += 1;
+        }
+      }
       return result;
     }
 
     public bool WordMatch()
     {
       bool output = false;
-      if (_word == _sentence)
+      foreach (string w in wordSplit)
       {
-        output = true;
+        if (_word == _sentence)
+        {
+          output = true;
+        }
       }
       return output;
     }
