@@ -15,6 +15,16 @@ namespace WordCounter.Project
       _sentence = sentence;
     }
 //=========================================
+    public string GetWord()
+    {
+      return _word;
+    }
+//=========================================
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+//=========================================
     public int GetResult()
     {
       return LoopCount();
