@@ -8,7 +8,13 @@ namespace WordCounter.Project
   {
     public HomeModule()
     {
+      Get["/"] = _ => View ["WordCounter.cshtml"];
 
+      Post["/WordCounter"] = _ =>
+      {
+        WordCounter newWordCounter = new WordCounter(Request.Form["word"], Request.Form["sentence"]);
+        return View["/RESTfulRoutingFromWordCounter", newWordCounter];
+      };
     }
   }
 }

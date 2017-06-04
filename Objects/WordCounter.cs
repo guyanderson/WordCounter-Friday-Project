@@ -44,5 +44,6 @@ namespace WordCounter.Project
       string[] wordSplit = _sentence.Split(' ');
       return wordSplit;
     }
+//=========================================    
   }
 }
