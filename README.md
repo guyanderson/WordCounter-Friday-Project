@@ -1,20 +1,22 @@
-# _{Application Name}_
+# _WordCounter_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Enter a word. Enter a sentence. The program will return the number of times the word is in the sentence. 6/5/17_
 
-#### By _**{List of contributors}**_
+#### By _**Guy Anderson**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_The program will take 2 inputs from the user: a word, and a sentence. The program will look for an exact match of the users word inside the sentence. Teh program will then return the user input to the screen, along with the number of times the word appears in the sentence._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Go to Github repository page.
+* Click the "download or clone" button and copy the link
+* In your computers terminal type "git clone" & paste the copied link.
+* Run dnu restore in terminal
+* Run dnx kestrel in terminal
+* Open browser, type localhost:5004 for url
+* Prepare to be amazed!
 
 ## Specs
 | Behavior      | Input | Output |
@@ -26,22 +28,21 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | program will count how many time the comparison word is in the sentence | cat / the cat eats cat food | 2 |
 | results page will display the users original word, sentence, and how many times the word was found in the sentence | cat / the cat eats cat food | cat / the cat eats cat food / 2 |
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Punctuation and capitalization are not taken into consideration._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_As always, there is no support for this product_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_C#, Razor, Nancy, bootstrap_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2017 FunGuy entertainment
