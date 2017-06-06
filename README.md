@@ -26,7 +26,9 @@ _The program will take 2 inputs from the user: a word, and a sentence. The progr
 | program will identify matching words | cat / cat | true |
 | program will split user sentence up by words | the cat eats cat food | the, cat, eats, cat, food |
 | program will count how many time the comparison word is in the sentence | cat / the cat eats cat food | 2 |
-| results page will display the users original word, sentence, and how many times the word was found in the sentence | cat / the cat eats cat food | cat / the cat eats cat food / 2 |
+| results page will display the users original word, sentence, and how many times the word was found in the sentence | cat / the cat eats cat food | 2 |
+| Program will accept lower and upper case to be equal | the / The cat eats cat food | 1  |
+| Program will ignore common punctuation | food / the cat eats cat food. | 1 |
 
 
 

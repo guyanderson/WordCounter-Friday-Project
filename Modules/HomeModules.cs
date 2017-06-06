@@ -10,10 +10,10 @@ namespace WordCounter.Project
     {
       Get["/"] = _ => View ["WordCounter.cshtml"];
 
-      Post["/WordCounter"] = _ =>
+      Post["WordCounter"] = _ =>
       {
         WordCounter newWordCounter = new WordCounter(Request.Form["word"], Request.Form["sentence"]);
-        return View["/RESTfulRoutingFromWordCounter", newWordCounter];
+        return View["/WordCounter_Result", newWordCounter];
       };
     }
   }
