@@ -15,6 +15,11 @@ namespace WordCounter.Project
       _sentence = sentence;
     }
 //=========================================
+    // public string strip()
+    // {
+    //   string[] word = ToLower()
+    // }
+//=========================================
     public string GetWord()
     {
       return _word;
@@ -56,7 +61,7 @@ namespace WordCounter.Project
 //=========================================
     public string[] SplitToWord()
     {
-      string[] wordSplit = _sentence.Split(' ');
+      string[] wordSplit = _sentence.ToLower().Replace(".", " ").Split(' ');
       return wordSplit;
     }
 //=========================================
