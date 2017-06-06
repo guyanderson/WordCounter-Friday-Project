@@ -29,10 +29,10 @@ namespace WordCounter.Project
     public void SplitToWord_SplitBySpaces_StringA()
     {
       string word = "cat";
-      string sentence = "The cat eats cat food.";
+      string sentence = "The. cat? eats, cat! food";
       WordCounter newWordCounter = new WordCounter(word, sentence);
       newWordCounter.SplitToWord();
-      Assert.Equal("The", newWordCounter.SplitToWord()[0]);
+      Assert.Equal("the", newWordCounter.SplitToWord()[0]);
       Assert.Equal("cat", newWordCounter.SplitToWord()[1]);
       Assert.Equal("eats", newWordCounter.SplitToWord()[2]);
       Assert.Equal("cat", newWordCounter.SplitToWord()[3]);

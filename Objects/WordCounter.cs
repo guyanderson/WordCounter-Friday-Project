@@ -61,7 +61,7 @@ namespace WordCounter.Project
 //=========================================
     public string[] SplitToWord()
     {
-      string[] wordSplit = _sentence.ToLower().Replace(".", " ").Split(' ');
+      string[] wordSplit = _sentence.ToLower().Replace(".", "").Replace(",", "").Replace("!", "").Replace("?", "").Split(' ');
       return wordSplit;
     }
 //=========================================
